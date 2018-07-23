@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN print 'https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.6/main\nhttps://mirrors.tuna.tsinghua.edu.cn/alpine/v3.6/community' > /etc/apk/repositories
+RUN printf 'https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.6/main\nhttps://mirrors.tuna.tsinghua.edu.cn/alpine/v3.6/community' > /etc/apk/repositories
 
 RUN apk update \
 && apk add build-base python
